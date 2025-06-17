@@ -4,76 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Server</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-danger text-white text-center py-3">
-        <h1>Python Server's</h1>
-        <h3>Bug Bounty Scattman's</h3>
+    <header class="header-section text-white">
+        <h1 class="display-4 fw-bold">BUG BOUNTY SCATTMAN'S</h1>
     </header>
     <main>
         <div class="container">
-            <div class="row gx-2 justify-content-center">
-                <!-- Button for chatroom server with ngrok -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Python Server</h5>
-                            <p class="card-text">This is a simple Python server that serves static files and handles basic HTTP requests.</p>   
-                        </div>
-                    </div>
-                </div>
-                <!-- Button for chatroom client no ngrok -->
+            <h2 class="text-center mb-4 section-title">PYTHON SERVERS</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Chatroom Server with ngrok -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Python Server</h5>
-                            <p class="card-text">This is a simple Python server that serves static files and handles basic HTTP requests.</p>   
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <span class="status-badge ngrok-badge">With Ngrok</span>
+                            <i class="fas fa-comments card-icon"></i>
+                            <h5 class="card-title">Chatroom Server</h5>
+                            <p class="card-text">Real-time chat application with ngrok tunneling support for external access.</p>
+                            <button class="btn btn-danger mt-3">Launch Server</button>
                         </div>
                     </div>
                 </div>
-                <!-- Button for file server-client with ngrok -->
+                <!-- File Server with ngrok -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Python Server</h5>
-                            <p class="card-text">This is a simple Python server that serves static files and handles basic HTTP requests.</p>   
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <span class="status-badge ngrok-badge">With Ngrok</span>
+                            <i class="fas fa-file-upload card-icon"></i>
+                            <h5 class="card-title">File Server</h5>
+                            <p class="card-text">Secure file transfer server with ngrok tunneling support.</p>
+                            <button class="btn btn-danger mt-3">Launch Server</button>
                         </div>
                     </div>
                 </div>
-                <!-- Button for file server-client no ngrok -->
+                <!-- Email Server with ngrok -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Python Server</h5>
-                            <p class="card-text">This is a simple Python server that serves static files and handles basic HTTP requests.</p>   
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <span class="status-badge ngrok-badge">With Ngrok</span>
+                            <i class="fas fa-envelope card-icon"></i>
+                            <h5 class="card-title">Email Server</h5>
+                            <p class="card-text">Email server with ngrok tunneling for external access.</p>
+                            <button class="btn btn-danger mt-3">Launch Server</button>
                         </div>
                     </div>
                 </div>
-                <!-- Button for email server-client with ngrok -->
+                <!-- Chatroom Server without ngrok -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Python Server</h5>
-                            <p class="card-text">This is a simple Python server that serves static files and handles basic HTTP requests.</p>   
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <span class="status-badge no-ngrok-badge">No Ngrok</span>
+                            <i class="fas fa-comments card-icon"></i>
+                            <h5 class="card-title">Chatroom Server</h5>
+                            <p class="card-text">Local chat application for internal network communication.</p>
+                            <button class="btn btn-danger mt-3">Launch Server</button>
                         </div>
                     </div>
                 </div>
-                <!-- Button for email server-client no ngrok -->
+                <!-- File Server without ngrok -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Python Server</h5>
-                            <p class="card-text">This is a simple Python server that serves static files and handles basic HTTP requests.</p>   
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <span class="status-badge no-ngrok-badge">No Ngrok</span>
+                            <i class="fas fa-file-upload card-icon"></i>
+                            <h5 class="card-title">File Server</h5>
+                            <p class="card-text">Local file transfer server for internal network use.</p>
+                            <button class="btn btn-danger mt-3">Launch Server</button>
                         </div>
                     </div>
                 </div>
-
+                <!-- Email Server without ngrok -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <span class="status-badge no-ngrok-badge">No Ngrok</span>
+                            <i class="fas fa-envelope card-icon"></i>
+                            <h5 class="card-title">Email Server</h5>
+                            <p class="card-text">Local email server for internal network communication.</p>
+                            <button class="btn btn-danger mt-3">Launch Server</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2023 My App</p>
+    <footer class="text-center">
+        <p class="mb-0">&copy; 2024 Python Server's Bug Bounty Scattman's</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
