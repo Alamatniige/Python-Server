@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 import smtplib
 from email.message import EmailMessage
 
-app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/static')
+app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/templates/static')
 app.secret_key = 'supersecretkey'
 
 SMTP_HOST = '127.0.0.1'

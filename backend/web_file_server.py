@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, send_from_directory, redirect
 UPLOAD_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), '../uploads'))
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/static')
+app = Flask(__name__, template_folder='../frontend/templates', static_folder='../frontend/templates/static')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.secret_key = 'supersecretkey'
 
