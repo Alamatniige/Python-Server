@@ -1,0 +1,74 @@
+body {
+    background: #181d27;
+    color: #fff;
+    min-height: 100vh;
+}
+.header-section {
+    background: #c0392b;
+    padding: 2rem 0 1rem 0;
+    margin-bottom: 2rem;
+}
+.chat-card {
+    background: #23293a;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    padding: 2rem;
+}
+#messages {
+    background: #181d27;
+    border-radius: 0.5rem;
+    height: 350px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #343a40;
+}
+.chat-bubble {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+    max-width: 75%;
+}
+.chat-bubble.me {
+    align-self: flex-end;
+    background: #c0392b;
+    color: #fff;
+    border-radius: 1rem 1rem 0 1rem;
+    padding: 0.7rem 1rem;
+}
+.chat-bubble.other {
+    align-self: flex-start;
+    background: #23293a;
+    color: #fff;
+    border-radius: 1rem 1rem 1rem 0;
+    padding: 0.7rem 1rem;
+    border: 1px solid #c0392b;
+}
+.username-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #f1c40f;
+}
+.input-group .form-control {
+    background: #23293a;
+    color: #fff;
+    border: 1px solid #c0392b;
+}
+.input-group .form-control:focus {
+    background: #23293a;
+    color: #fff;
+    border-color: #f1c40f;
+    box-shadow: none;
+}
+.btn-send {
+    background: #c0392b;
+    border: none;
+}
+.btn-send:hover {
+    background: #a93226;
+}
+@media (max-width: 600px) {
+    .chat-card { padding: 1rem; }
+    #messages { height: 220px; }
+}
